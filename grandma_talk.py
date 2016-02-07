@@ -25,7 +25,7 @@ def talk():
             return
     
         if "play" in say:
-            ask_game_and_play()
+            ask_game_and_play(list_games)
             print "You have %d money." % money
             
         elif say == "help":
