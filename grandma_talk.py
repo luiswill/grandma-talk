@@ -1,19 +1,26 @@
 from random import randrange
 
 def talk():
-    text = [["NO, NOT SINCE %d HOURS", "Mh yes I slept around %d hours today", "Exactly, I lost %d teeths", 
-            "I will come to you in %d days", "Probably %d times"],
-            "You are ugly!",
-            "Boy, do you really think I don't hear you?",
-            "What the fuck?", "Do you love me?", "What ? You vomite?",
-            "Do you want some schweppes with me?", 
-            "You're the big boss!", "Aristide is the best.", 
-            "L1 Info 4ever", "You mean today?", "Now?", "Oh I ate chicken today", 
-            "Boy, you're completely right!", "Python or PHP?"]
+    text = [
+        [
+            "NO, NOT SINCE %d HOURS",
+            "Mh yes I slept around %d hours today",
+            "Exactly, I lost %d teeths", 
+            "I will come to you in %d days",
+            "Probably %d times"
+        ],
+        "You are ugly!",
+        "Boy, do you really think I don't hear you?",
+        "What the fuck?", "Do you love me?", "What ? You vomite?",
+        "Do you want some schweppes with me?", 
+        "You're the big boss!", "Aristide is the best.", 
+        "L1 Info 4ever", "You mean today?", "Now?", "Oh I ate chicken today", 
+        "Boy, you're completely right!", "Python or PHP?"
+    ]
     money = 0
     
-    list_games = ["mexican_fork", "craps", "rocket_drive"]
-    help_me = ["list_games", "text", "money"]
+    games = ["mexican_fork", "craps", "rocket_drive"]
+    help_me = ["games", "text", "money"]
     
     
     RANGE_RANDOM = 20
@@ -29,7 +36,7 @@ def talk():
             print "You have %d money." % money
             
         elif say == "help":
-            print "Type money to see your money, list_games to see games, text to see my answers possible.."
+            print "Type money to see your money, games to see games, text to see my answers possible.."
             
         elif say.endswith("!!"):
             print "Calm down boy!"
@@ -45,19 +52,19 @@ def talk():
                 
                 
 
-def ask_game_and_play(list_games):
+def ask_game_and_play(games):
     
     while True:
         game = raw_input("What do you want to play little boy? Type list to show games.")
         
         if game == "list":
-            print list_games
+            print games
             
-        elif game in list_games:
+        elif game in games:
             import importlib
             return importlib.import_module(game, package=None).play()
         
         else:
-            print "Sorry boy, I am to old to remember this game."
+            print "Sorry boy, I am too old to remember this game."
             return
 talk()
