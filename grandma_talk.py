@@ -24,11 +24,11 @@ def talk():
             print "BYE, SONNY !"
             return
     
-        if "play" in say:
+        if "play" in say.lower():
             ask_game_and_play(list_games)
             print "You have %d money." % money
             
-        elif say == "help":
+        elif say.lower() == "help":
             print "Type money to see your money, list_games to see games, text to see my answers possible.."
             
         elif say.endswith("!!"):
@@ -49,8 +49,9 @@ def ask_game_and_play(list_games):
     
     while True:
         game = raw_input("What do you want to play little boy? Type list to show games.")
+        game = game.lower()
         
-        if game == "list":
+        if game == "list" or game == "list_games":
             print list_games
             
         elif game in list_games:
