@@ -20,7 +20,7 @@ Very probably laowantong ( Mr. Grange ) can explain it much better, I hope you a
 Ici Aristide. De mémoire, rapidement, voici les principales étapes. À compléter ou préciser:
 
 - Installez https://desktop.github.com sur votre ordinateur et configurez-le avec votre compte GitHub.
-- Allez ici (https://github.com/luiswill/grandma-talk) et cliquez sur Fork (en haut à gauche).
+- Allez ici (https://github.com/luiswill/grandma-talk) et cliquez sur Fork (en haut à droite).
 - Allez sur votre fork du projet (chez moi c'est https://github.com/laowantong/grandma-talk).
 - Cliquez sur l'icône de l'ordinateur avec une flèche.
 - Vous avez maintenant une copie du projet de Luis sur votre ordinateur.
