@@ -1,4 +1,4 @@
- ### Exercice: conversation avec une grand-mère sourde (d'après [Chris Pine](https://pine.fm/LearnToProgram/chap_06.html))
+### Exercice: conversation avec une grand-mère sourde (d'après [Chris Pine](https://pine.fm/LearnToProgram/chap_06.html))
 > Quoi que vous disiez à Mamie, elle vous crie `"HUH?! SPEAK UP, SONNY!"`, à moins que vous ne vous mettiez à crier vous aussi (c'est-à-dire à taper tout en majuscules). Elle vous crie alors en réponse: `"NO, NOT SINCE 1938!"` (avec une année aléatoire entre 1930 et 1950). Pour terminer la conversation, commencez votre phrase par `"BYE"`.
 >
 > 1. Écrivez un simulateur de grand-mère sourde (américaine, française ou allemande, comme vous préférez) sous la forme d'une procédure `talk` sans paramètres.
