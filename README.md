@@ -3,11 +3,21 @@ Talk with grand-mother
 
 
 
-Version 1.0 : Added : craps, mexican_fork, rocket-drive, grandma_talk, input_number_between
+Version 1.0 :
+- Main function : grandma_talk
+- Added games: craps.py, mexican_fork.py, rocket-drive.py
+- Added function to input numbers : input_number_between.py
+
+Version 2.0 : 
+- Added family of grandma
+- New system before saying bye
+- Added grandma's reaction for number of "!", for length of answer
+- Amelioration for searching some special words in answer.
 
 
 
-To talk with grandma : copy this repository on your computer as local ( https://help.github.com/articles/fork-a-repo/ ), then run grandma_talk.
+To talk with grandma : 
+copy this repository on your computer as local ( https://help.github.com/articles/fork-a-repo/ ), then run grandma_talk.
 
 If you see any problem, make propositions on git (pull-request). Or create new functions, it would be very cool ! :D
 
