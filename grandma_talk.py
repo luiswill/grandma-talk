@@ -2,7 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 from random import randrange, choice
-
+from input_number_between import input_number_between
+from random import shuffle
+import importlib
 
 GAMES = ["mexican_fork", "craps", "rocket_drive"]
 FAMILY = [("Steve", 50), ("Bill", 55), ("Bob", 14)]
@@ -53,7 +55,6 @@ def bye(say):
             
     else: 
         word = choice(words)
-        from random import shuffle
         while True: #doesn't work, I don't know why
             word = word
             shuffle(list(word))
@@ -126,7 +127,6 @@ def family():
         for i in range(len(FAMILY)):
             print "%s is %d years old." % (FAMILY[i][0], FAMILY[i][1])
     if choice.lower().startswith("add"):
-        from input_number_between import input_number_between
         FAMILY.append((raw_input("Do you have a name for your person?"), 
                     input_number_between("Since how many years is this person on earth ?", 0, 150)))
         print "Oh a new family member! "
@@ -137,7 +137,6 @@ def ask_game_and_play(GAMES):
         game = raw_input("What do you want to play little boy? We have %s." % GAMES)
         
         if game in GAMES:
-            import importlib
             return importlib.import_module(game, package=None).play()
         
         else:
